@@ -26,7 +26,7 @@ FROM `sql-projects-381215.SQLProject.CovidDeaths`
 WHERE Location = 'United Kingdom'
 ORDER BY 1,2;
 
--- Reviewing at Countries with Highest Rate compared to Population
+-- Reviewing Countries with Highest Rate compared to Population
 
 SELECT Location, Population, MAX(total_cases) AS Highest_Infection_Count, MAX((total_cases/population)) *100 AS Percentage_Of_Population_Infected
 FROM `sql-projects-381215.SQLProject.CovidDeaths` 
